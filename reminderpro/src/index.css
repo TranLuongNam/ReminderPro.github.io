@@ -1,13 +1,78 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.App {
+  margin-left: 37%;
+  margin-top: 100px;
+}
+.form-group--custom {
+  margin-left: -10%;
+}
+.App h1 {
+  margin-bottom: 50px;
+  margin-left: 5%;
+  font-size: 75px;
+  font-weight: bold;
+  color: #ec7532;
+  transition: all 1s;
+  border-bottom: 6px solid green;
+  width: 0;
+
+}
+h1:hover {
+  border-bottom: 6px solid yellow;
+  width: 450px;
+  transition: all 1s;
+}
+input {
+  min-height: 90px;
+  width: 420px !important;
+  font-size: 22px !important;
+}
+::placeholder {
+  color: #ec7532 !important;
+  font-size: 21px;
+  font-weight: bold;
+}
+button {
+  min-height: 90px;
+  font-size: 21px !important;
+  font-weight: bold !important;
+  margin-right: 272px;
+}
+.custom-btn {
+  color: #ec7532;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  padding: 15px;
+  left: 78%;
+}
+.form-inline {
+  position: relative;
+}
+.list-group--custom {
+  margin-left: 8%;
+  margin-top: 10px;
+}
+.clear-btn {
+  position: absolute;
+  top: 110%;
+  left: 15%;
+  padding: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  min-height: 90px;
+  line-height: 60px;
+}
+.list-item--custom {
+  min-width: 800px !important;
 }
