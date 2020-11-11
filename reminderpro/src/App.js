@@ -4,6 +4,9 @@ import { addReminder, deleteReminder, clearReminder } from "./actions";
 import moment from "moment";
 
 class App extends Component {
+  state= {
+    content:''
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -13,6 +16,9 @@ class App extends Component {
   }
   addReminder() {
     this.props.addReminder(this.state.text, this.state.dueDate);
+    this.setState({
+      content:''
+    })
   }
   deleteReminder(id) {
     // console.log("delete", id);
@@ -21,7 +27,7 @@ class App extends Component {
 
   renderReminder() {
     const { reminders } = this.props;
-    return (
+    return  (
       <ul className="list-group list-group--custom col-sm-4 ">
         {reminders.map((reminders) => {
           return (
@@ -59,7 +65,7 @@ class App extends Component {
           );
         })}
       </ul>
-    );
+    )  
   }
   render() {
     return (
@@ -75,6 +81,7 @@ class App extends Component {
                   text: e.target.value,
                 });
               }}
+              value={this.state.content}
             />
             <input
               className="form-control "
@@ -85,6 +92,7 @@ class App extends Component {
                   dueDate: e.target.value,
                 })
               }
+              value={this.state.content}
             />
           </div>
 

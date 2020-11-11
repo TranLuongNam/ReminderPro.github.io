@@ -22,7 +22,7 @@ code {
   font-size: 75px;
   font-weight: bold;
   color: #ec7532;
-  transition: all 1s;
+  transition: all 1.2s;
   border-bottom: 6px solid green;
   width: 0;
 
@@ -30,7 +30,7 @@ code {
 h1:hover {
   border-bottom: 6px solid yellow;
   width: 450px;
-  transition: all 1s;
+  transition: all 1.2s;
 }
 input {
   min-height: 90px;
